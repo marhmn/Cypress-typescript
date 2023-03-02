@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 0,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-02-26T07:18:08.714Z",
+    "end": "2023-02-26T07:18:32.856Z",
+    "duration": 24142,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "2d964abd-640c-40c1-a550-98e9d0852972",
+      "title": "",
+      "fullFile": "cypress/integration/login.ts",
+      "file": "cypress/integration/login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [
+        {
+          "title": "Test LOGIN",
+          "fullTitle": "Test LOGIN",
+          "timedOut": null,
+          "duration": 5541,
+          "state": "passed",
+          "speed": "medium",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();",
+          "err": {},
+          "uuid": "307eb31e-2e8c-4b2d-bb9e-652c0321bfcf",
+          "parentUUID": "2d964abd-640c-40c1-a550-98e9d0852972",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Invalid Password",
+          "fullTitle": "Test Sauce Demo Invalid Password",
+          "timedOut": null,
+          "duration": 3871,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'invalidPass');\nloginPage.assertLoginFail();",
+          "err": {},
+          "uuid": "a8d8884b-e484-43ad-acad-3493b321893e",
+          "parentUUID": "2d964abd-640c-40c1-a550-98e9d0852972",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Sauce labs product backpack",
+          "fullTitle": "Test Sauce Demo Sauce labs product backpack",
+          "timedOut": null,
+          "duration": 2962,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();",
+          "err": {},
+          "uuid": "ce3b09d0-95fc-4068-91c2-20764a26c3e0",
+          "parentUUID": "2d964abd-640c-40c1-a550-98e9d0852972",
+          "isHook": false,
+          "skipped": false
+        },
+        {
+          "title": "Test Sauce Demo Sauce labs add to cart product backpack",
+          "fullTitle": "Test Sauce Demo Sauce labs add to cart product backpack",
+          "timedOut": null,
+          "duration": 2503,
+          "state": "passed",
+          "speed": "fast",
+          "pass": true,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "loginPage.login(URL, 'standard_user', 'secret_sauce');\nloginPage.assertLogin();\ndashboardPage.sauceLabsBackpack();\naddTocart.addItem();",
+          "err": {},
+          "uuid": "7bd31c6d-f0a3-4caf-9af3-a1245b3ff3b3",
+          "parentUUID": "2d964abd-640c-40c1-a550-98e9d0852972",
+          "isHook": false,
+          "skipped": false
+        }
+      ],
+      "suites": [],
+      "passes": [
+        "307eb31e-2e8c-4b2d-bb9e-652c0321bfcf",
+        "a8d8884b-e484-43ad-acad-3493b321893e",
+        "ce3b09d0-95fc-4068-91c2-20764a26c3e0",
+        "7bd31c6d-f0a3-4caf-9af3-a1245b3ff3b3"
+      ],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 14877,
+      "root": true,
+      "rootEmpty": false,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "chart": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/reports"
+      },
+      "version": "6.2.0"
+    }
+  }
+}
